@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <h1>Student Registration</h1>
+
+    <form id="registrationForm" onsubmit="return validateAndSubmit()">
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <span id="firstNameError" class="error"></span><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <span id="lastNameError" class="error"></span><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        <span id="ageError" class="error"></span><br>
+
+        
+
+        <label for="course">Course:</label><br>
+        <select id="course" name="course">
+            <option value="CS">Computer Science</option>
+            <option value="ENG">Engineering</option>
+            <option value="MGT">Management</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <script src="validate1.js"></script>
+</body>
+</html>
